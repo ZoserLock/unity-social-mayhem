@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76af4f0c6d0003944bac621179887ae6, type: 3}
+  m_Name: UI Panel HUD List
+  m_EditorClassIdentifier: 
+  _panels:
+  - {fileID: 6137841154952538752, guid: 0e18ebac99230bb48bd8c205f414d90e, type: 3}

@@ -1,0 +1,155 @@
+﻿using System.Collections;
+using System.Numerics;
+
+//to see the colors: http://www.foszor.com/blog/xna-color-chart/
+
+namespace Zen.Core
+{
+    public class Colors
+    {
+        public static Vector4 FromRGBA(byte r, byte g, byte b, byte a)
+        {
+            return new Vector4(r / 255.0f, g / 255.0f, b / 255.0f, a / 255.0f);
+        }
+        
+        // Colors
+        public static Vector4 AliceBlue = FromRGBA(240, 248, 255, 255);
+        public static Vector4 AntiqueWhite = FromRGBA(250, 235, 215, 255);
+        public static Vector4 Aquamarine = FromRGBA(127, 255, 212, 255);
+        public static Vector4 Azure = FromRGBA(240, 255, 255, 255);
+        public static Vector4 Beige = FromRGBA(245, 245, 220, 255);
+        public static Vector4 Bisque = FromRGBA(255, 228, 196, 255);
+        public static Vector4 Black = FromRGBA(0, 0, 0, 255);
+        public static Vector4 BlanchedAlmond = FromRGBA(255, 235, 205, 255);
+        public static Vector4 Blue = FromRGBA(0, 0, 255, 255);
+        public static Vector4 BlueViolet = FromRGBA(138, 43, 226, 255);
+        public static Vector4 Brown = FromRGBA(165, 42, 42, 255);
+        public static Vector4 BurlyWood = FromRGBA(222, 184, 135, 255);
+        public static Vector4 CadetBlue = FromRGBA(95, 158, 160, 255);
+        public static Vector4 Chartreuse = FromRGBA(127, 255, 0, 255);
+        public static Vector4 Chocolate = FromRGBA(210, 105, 30, 255);
+        public static Vector4 Coral = FromRGBA(255, 127, 80, 255);
+        public static Vector4 CornflowerBlue = FromRGBA(100, 149, 237, 255);
+        public static Vector4 Cornsilk = FromRGBA(255, 248, 220, 255);
+        public static Vector4 Crimson = FromRGBA(220, 20, 60, 255);
+        public static Vector4 Cyan = FromRGBA(0, 255, 255, 255);
+        public static Vector4 DarkBlue = FromRGBA(0, 0, 139, 255);
+        public static Vector4 DarkCyan = FromRGBA(0, 139, 139, 255);
+        public static Vector4 DarkGoldenrod = FromRGBA(184, 134, 11, 255);
+        public static Vector4 DarkGray = FromRGBA(169, 169, 169, 255);
+        public static Vector4 DarkGreen = FromRGBA(0, 100, 0, 255);
+        public static Vector4 DarkKhaki = FromRGBA(189, 183, 107, 255);
+        public static Vector4 DarkMagenta = FromRGBA(139, 0, 139, 255);
+        public static Vector4 DarkOliveGreen = FromRGBA(85, 107, 47, 255);
+        public static Vector4 DarkOrange = FromRGBA(255, 140, 0, 255);
+        public static Vector4 DarkOrchid = FromRGBA(153, 50, 204, 255);
+        public static Vector4 DarkRed = FromRGBA(139, 0, 0, 255);
+        public static Vector4 DarkSalmon = FromRGBA(233, 150, 122, 255);
+        public static Vector4 DarkSeaGreen = FromRGBA(143, 188, 139, 255);
+        public static Vector4 DarkSlateBlue = FromRGBA(72, 61, 139, 255);
+        public static Vector4 DarkSlateGray = FromRGBA(47, 79, 79, 255);
+        public static Vector4 DarkTurquoise = FromRGBA(0, 206, 209, 255);
+        public static Vector4 DarkViolet = FromRGBA(148, 0, 211, 255);
+        public static Vector4 DeepPink = FromRGBA(255, 20, 147, 255);
+        public static Vector4 DeepSkyBlue = FromRGBA(0, 191, 255, 255);
+        public static Vector4 DimGray = FromRGBA(105, 105, 105, 255);
+        public static Vector4 DodgerBlue = FromRGBA(30, 144, 255, 255);
+        public static Vector4 Firebrick = FromRGBA(178, 34, 34, 255);
+        public static Vector4 FloralWhite = FromRGBA(255, 250, 240, 255);
+        public static Vector4 ForestGreen = FromRGBA(34, 139, 34, 255);
+        public static Vector4 Gainsboro = FromRGBA(220, 220, 220, 255);
+        public static Vector4 GhostWhite = FromRGBA(248, 248, 255, 255);
+        public static Vector4 Gold = FromRGBA(255, 215, 0, 255);
+        public static Vector4 Goldenrod = FromRGBA(218, 165, 32, 255);
+        public static Vector4 Gray = FromRGBA(128, 128, 128, 255);
+        public static Vector4 Green = FromRGBA(0, 128, 0, 255);
+        public static Vector4 GreenYellow = FromRGBA(173, 255, 47, 255);
+        public static Vector4 Honeydew = FromRGBA(240, 255, 240, 255);
+        public static Vector4 HotPink = FromRGBA(255, 105, 180, 255);
+        public static Vector4 IndianRed = FromRGBA(205, 92, 92, 255);
+        public static Vector4 Indigo = FromRGBA(75, 0, 130, 255);
+        public static Vector4 Ivory = FromRGBA(255, 255, 240, 255);
+        public static Vector4 Khaki = FromRGBA(240, 230, 140, 255);
+        public static Vector4 Lavender = FromRGBA(230, 230, 250, 255);
+        public static Vector4 LavenderBlush = FromRGBA(255, 240, 245, 255);
+        public static Vector4 LawnGreen = FromRGBA(124, 252, 0, 255);
+        public static Vector4 LemonChiffon = FromRGBA(255, 250, 205, 255);
+        public static Vector4 LightBlue = FromRGBA(173, 216, 230, 255);
+        public static Vector4 LightCoral = FromRGBA(240, 128, 128, 255);
+        public static Vector4 LightCyan = FromRGBA(224, 255, 255, 255);
+        public static Vector4 LightGoldenrodYellow = FromRGBA(250, 250, 210, 255);
+        public static Vector4 LightGreen = FromRGBA(144, 238, 144, 255);
+        public static Vector4 LightGray = FromRGBA(211, 211, 211, 255);
+        public static Vector4 LightPink = FromRGBA(255, 182, 193, 255);
+        public static Vector4 LightSalmo = FromRGBA(255, 160, 122, 255);
+        public static Vector4 LightSeaGreen = FromRGBA(32, 178, 170, 255);
+        public static Vector4 LightSkyBlue = FromRGBA(135, 206, 250, 255);
+        public static Vector4 LightSlateGray = FromRGBA(119, 136, 153, 255);
+        public static Vector4 LightSteelBlue = FromRGBA(176, 196, 222, 255);
+        public static Vector4 LightYellow = FromRGBA(255, 255, 224, 255);
+        public static Vector4 Lime = FromRGBA(0, 255, 0, 255);
+        public static Vector4 LimeGreen = FromRGBA(50, 205, 50, 255);
+        public static Vector4 Linen = FromRGBA(250, 240, 230, 255);
+        public static Vector4 Magenta = FromRGBA(255, 0, 255, 255);
+        public static Vector4 Maroon = FromRGBA(128, 0, 0, 255);
+        public static Vector4 MediumAquamarine = FromRGBA(102, 205, 170, 255);
+        public static Vector4 MediumBlue = FromRGBA(0, 0, 205, 255);
+        public static Vector4 MediumOrchid = FromRGBA(186, 85, 211, 255);
+        public static Vector4 MediumPurple = FromRGBA(147, 112, 219, 255);
+        public static Vector4 MediumSeaGreen = FromRGBA(60, 179, 113, 255);
+        public static Vector4 MediumSlateBlue = FromRGBA(123, 104, 238, 255);
+        public static Vector4 MediumSpringGreen = FromRGBA(0, 250, 154, 255);
+        public static Vector4 MediumTurquoise = FromRGBA(72, 209, 204, 255);
+        public static Vector4 MediumVioletRed = FromRGBA(199, 21, 133, 255);
+        public static Vector4 MidnightBlue = FromRGBA(25, 25, 112, 255);
+        public static Vector4 MintCream = FromRGBA(245, 255, 250, 255);
+        public static Vector4 MistyRose = FromRGBA(255, 228, 225, 255);
+        public static Vector4 Moccasin = FromRGBA(255, 228, 181, 255);
+        public static Vector4 NavajoWhite = FromRGBA(255, 222, 173, 255);
+        public static Vector4 Navy = FromRGBA(0, 0, 128, 255);
+        public static Vector4 OldLace = FromRGBA(253, 245, 230, 255);
+        public static Vector4 Olive = FromRGBA(128, 128, 0, 255);
+        public static Vector4 OliveDrab = FromRGBA(107, 142, 35, 255);
+        public static Vector4 Orange = FromRGBA(255, 165, 0, 255);
+        public static Vector4 OrangeRed = FromRGBA(255, 69, 0, 255);
+        public static Vector4 Orchid = FromRGBA(218, 112, 214, 255);
+        public static Vector4 PaleGoldenrod = FromRGBA(238, 232, 170, 255);
+        public static Vector4 PaleGreen = FromRGBA(152, 251, 152, 255);
+        public static Vector4 PaleTurquoise = FromRGBA(175, 238, 238, 255);
+        public static Vector4 PaleVioletRed = FromRGBA(219, 112, 147, 255);
+        public static Vector4 PapayaWhip = FromRGBA(255, 239, 213, 255);
+        public static Vector4 PeachPuff = FromRGBA(255, 218, 185, 255);
+        public static Vector4 Peru = FromRGBA(205, 133, 63, 255);
+        public static Vector4 Pink = FromRGBA(255, 192, 203, 255);
+        public static Vector4 Plum = FromRGBA(221, 160, 221, 255);
+        public static Vector4 PowderBlue = FromRGBA(176, 224, 230, 255);
+        public static Vector4 Purple = FromRGBA(128, 0, 128, 255);
+        public static Vector4 Red = FromRGBA(255, 0, 0, 255);
+        public static Vector4 RosyBrown = FromRGBA(188, 143, 143, 255);
+        public static Vector4 RoyalBlue = FromRGBA(65, 105, 225, 255);
+        public static Vector4 SaddleBrown = FromRGBA(139, 69, 19, 255);
+        public static Vector4 Salmon = FromRGBA(250, 128, 114, 255);
+        public static Vector4 SandyBrown = FromRGBA(244, 164, 96, 255);
+        public static Vector4 SeaGreen = FromRGBA(46, 139, 87, 255);
+        public static Vector4 SeaShell = FromRGBA(255, 245, 238, 255);
+        public static Vector4 Sienna = FromRGBA(160, 82, 45, 255);
+        public static Vector4 Silver = FromRGBA(192, 192, 192, 255);
+        public static Vector4 SkyBlue = FromRGBA(135, 206, 235, 255);
+        public static Vector4 SlateBlue = FromRGBA(106, 90, 205, 255);
+        public static Vector4 SlateGray = FromRGBA(112, 128, 144, 255);
+        public static Vector4 Snow = FromRGBA(255, 250, 250, 255);
+        public static Vector4 SpringGreen = FromRGBA(0, 255, 127, 255);
+        public static Vector4 SteelBlue = FromRGBA(70, 130, 180, 255);
+        public static Vector4 Tan = FromRGBA(210, 180, 140, 255);
+        public static Vector4 Teal = FromRGBA(0, 128, 128, 255);
+        public static Vector4 Thistle = FromRGBA(216, 191, 216, 255);
+        public static Vector4 Tomato = FromRGBA(255, 99, 71, 255);
+        public static Vector4 Turquoise = FromRGBA(64, 224, 208, 255);
+        public static Vector4 Violet = FromRGBA(238, 130, 238, 255);
+        public static Vector4 Wheat = FromRGBA(245, 222, 179, 255);
+        public static Vector4 White = FromRGBA(255, 255, 255, 255);
+        public static Vector4 WhiteSmoke = FromRGBA(245, 245, 245, 255);
+        public static Vector4 Yellow = FromRGBA(255, 255, 0, 255);
+        public static Vector4 YellowGreen = FromRGBA(154, 205, 50, 255);
+    }
+}

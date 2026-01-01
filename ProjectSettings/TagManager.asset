@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - OverlayUI
+  - 
+  - PostProcessing
+  - Portrait
+  - WorldSelection
+  - 
+  - Shield
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: FarBackground
+    uniqueID: 2616297973
+    locked: 0
+  - name: Background
+    uniqueID: 1705438679
+    locked: 0
+  - name: Foreground
+    uniqueID: 1804481913
+    locked: 0
+  - name: NearForeground
+    uniqueID: 1915217205
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: UIOverlay
+    uniqueID: 2449013467
+    locked: 0
+  m_RenderingLayers:
+  - Default
